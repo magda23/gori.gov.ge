@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  src: url("../fonts/BPGMrgvlovaniCaps2010.eot");
+  src: url("../fonts/BPGMrgvlovaniCaps2010.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/BPGMrgvlovaniCaps2010.woff2") format("woff2"),
+    url("../fonts/BPGMrgvlovaniCaps2010.woff") format("woff"),
+    url("../fonts/BPGMrgvlovaniCaps2010.ttf") format("truetype"),
+    url("../fonts/BPGMrgvlovaniCaps2010.svg#BPGMrgvlovaniCaps2010")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG Mrgvlovani";
+  src: url("../fonts/BPGMrgvlovani.eot");
+  src: url("../fonts/BPGMrgvlovani.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BPGMrgvlovani.woff2") format("woff2"),
+    url("../fonts/BPGMrgvlovani.woff") format("woff"),
+    url("../fonts/BPGMrgvlovani.ttf") format("truetype"),
+    url("../fonts/BPGMrgvlovani.svg#BPGMrgvlovani") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BPG Nino Mtavruli bd";
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot");
+  src: url("../fonts/BPGNinoMtavruli-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/BPGNinoMtavruli-Bold.woff2") format("woff2"),
+    url("../fonts/BPGNinoMtavruli-Bold.woff") format("woff"),
+    url("../fonts/BPGNinoMtavruli-Bold.ttf") format("truetype"),
+    url("../fonts/BPGNinoMtavruli-Bold.svg#BPGNinoMtavruli-Bold") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FiraGO-Regular.woff2") format("woff2"),
+    url("../fonts/FiraGO-Regular.woff") format("woff"),
+    url("../fonts/FiraGO-Regular.ttf") format("truetype"),
+    url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FiraGO bold";
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FiraGO-Bold.woff2") format("woff2"),
+    url("../fonts/FiraGO-Bold.woff") format("woff"),
+    url("../fonts/FiraGO-Bold.ttf") format("truetype"),
+    url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ALK Katerina";
+  src: url("../fonts/ALKKaterina.eot");
+  src: url("../fonts/ALKKaterina.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ALKKaterina.woff2") format("woff2"),
+    url("../fonts/ALKKaterina.woff") format("woff"),
+    url("../fonts/ALKKaterina.ttf") format("truetype"),
+    url("../fonts/ALKKaterina.svg#ALKKaterina") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Righteous";
+  src: url("../fonts/Righteous-Regular.eot");
+  src: url("../fonts/Righteous-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Righteous-Regular.woff2") format("woff2"),
+    url("../fonts/Righteous-Regular.woff") format("woff"),
+    url("../fonts/Righteous-Regular.ttf") format("truetype"),
+    url("../fonts/Righteous-Regular.svg#Righteous-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/Rockwell.eot");
+  src: url("../fonts/Rockwell.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Rockwell.woff2") format("woff2"),
+    url("Rockwell.woff") format("woff"),
+    url("../fonts/Rockwell.ttf") format("truetype"),
+    url("../fonts/Rockwell.svg#Rockwell") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

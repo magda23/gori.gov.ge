@@ -1,0 +1,851 @@
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  color: var(--dark-color);
+  line-height: normal;
+  overflow-x: hidden;
+}
+:root {
+  --bg-color: #eeeeee;
+  --light-color: #2672e4;
+  --white-color: #fff;
+  --dark-color: #000;
+  --dark-grey: #7e7e7e;
+  --transition: all 0.3s ease;
+}
+.img_fluid {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.back-to-top {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--light-color);
+  z-index: 999;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*header*/
+.header_ {
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 7%);
+}
+.top_header {
+  background-color: var(--light-color);
+  padding: 10px 0;
+}
+.logo_block {
+  margin-right: 55px;
+}
+.logo_txt {
+  color: var(--white-color);
+  padding-left: 5px;
+  font-size: 13px;
+}
+.logo_ {
+  width: 61px;
+  height: 81px;
+}
+.list_li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-family: "BPG Nino Mtavruli bd";
+}
+.nav-link i {
+  color: var(--dark-grey);
+  margin-left: 5px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.dropbtn {
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.dropbtn i {
+  margin-left: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--white-color);
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: var(--transition);
+  font-size: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: var(--light-color);
+  color: var(--white-color) !important;
+}
+
+.list_li:hover .dropdown-content {
+  display: block;
+}
+.search_bar {
+  border: none;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+  border-radius: 0;
+  min-width: 300px;
+  right: 0 !important;
+  left: initial !important;
+  margin-top: 10px !important;
+}
+.search_btn::after {
+  content: none;
+}
+.search_bar input {
+  background-color: #f4f4f4;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.search_sm {
+  top: 3px;
+  right: 0;
+}
+.contact_block {
+  border: 1px solid #fff;
+  color: var(--white-color);
+  height: 55px;
+  padding: 0 30px;
+  font-family: "BPG Mrgvlovani";
+}
+.contact_block p {
+  padding-right: 30px;
+  font-size: 14px;
+}
+.contact_block p:last-child {
+  padding-right: 0;
+}
+.contact_block p i {
+  padding-right: 10px;
+}
+.contact_btn {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  padding: 0px 24px;
+  height: 50px;
+  transition: var(--transition);
+}
+.contact_btn:hover {
+  background-color: var(--white-color);
+  color: var(--light-color);
+}
+.contact_btn,
+.contact_block {
+  border-radius: 28px;
+}
+.search_form {
+  margin-right: 30px;
+}
+
+.search_input {
+  display: none;
+  position: absolute;
+  width: 160px;
+  padding: 10px 6px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  z-index: 1;
+  transition: all 0.3s ease;
+  right: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 10px;
+  bottom: -5px;
+}
+.search_input::placeholder {
+  color: #fff;
+}
+.search_form:hover .search_input {
+  display: block;
+}
+.contact_btn,
+.search_input {
+  font-family: "BPG Nino Mtavruli bd";
+}
+.weather_block {
+  font-size: 14px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 0 35px;
+  margin-right: 40px;
+}
+.degrees_icon {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+}
+.city {
+  margin-right: 15px;
+}
+.dropbtn {
+  background-color: transparent;
+  color: var(--light-color);
+}
+.dropbtn i {
+  color: #7e7e7e;
+}
+.img_block {
+  height: 735px;
+}
+.img_block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 31%),
+    rgba(0, 0, 0, 40%),
+    rgba(0, 0, 0, 51%),
+    rgba(0, 0, 0, 63%),
+    rgba(0, 0, 0, 71%),
+    rgba(0, 0, 0, 79%),
+    rgba(0, 0, 0, 85%),
+    rgba(0, 0, 0, 100%)
+  );
+}
+.elemenet_block {
+  padding-left: 50px;
+}
+.more_btn {
+  background-color: rgba(153, 153, 153, 66%);
+  border-radius: 25px;
+  padding: 14px 44px;
+  transition: var(--transition);
+}
+.more_btn:hover {
+  background-color: var(--light-color);
+}
+.info_block {
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.info_block .title_ {
+  font-size: 50px;
+  font-family: "BPG Nino Mtavruli bd";
+  width: 580px;
+  margin-bottom: 25px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none;
+}
+.s1 .swiper-button-next,
+.s1 .swiper-button-prev {
+  color: var(--white-color);
+  bottom: 120px;
+  top: initial;
+  transition: var(--transition);
+}
+.s1 .swiper-button-next {
+  left: 100px;
+  right: initial;
+}
+.s1 .swiper-button-prev {
+  left: 50px;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+.swiper-button-prev:hover {
+  padding-right: 10px;
+}
+.swiper-button-next:hover {
+  padding-left: 10px;
+}
+
+.element_section,
+.service_section {
+  background-color: var(--bg-color);
+}
+.element_items {
+  padding: 0 80px;
+  position: relative;
+  z-index: 999;
+  margin-top: -70px;
+}
+.element_box {
+  box-shadow: 6px 7px 20px rgba(0, 0, 0, 16%);
+  padding: 30px 0 20px;
+  height: 183px;
+  background-color: #fff;
+  transition: var(--transition);
+}
+.element_box:hover {
+  transform: translateY(-40px);
+  background-color: var(--light-color);
+  color: #fff;
+}
+.element_box:hover .white_ {
+  display: block;
+}
+.element_box:hover .blue_ {
+  display: none;
+}
+.white_ {
+  display: none;
+}
+.element_icon {
+  margin-bottom: 35px;
+}
+.element_title {
+  font-family: "BPG Nino Mtavruli bd";
+}
+.elementor_block {
+  transition: all ease 0.5s;
+}
+.elementor_block,
+.elementor_img,
+.sm_img {
+  overflow: hidden;
+}
+.elementor_img {
+  margin-bottom: 20px;
+}
+.elementor_img img,
+.sm_img img {
+  transition: all ease 0.5s;
+}
+.elementor_block:hover {
+  color: var(--light-color);
+}
+.elementor_block:hover img,
+.sm_img:hover img {
+  transform: scale(1.2);
+}
+.border_right {
+  border-right: 1px solid var(--white-color);
+}
+.main_title {
+  font-size: 30px;
+  font-family: "BPG Nino Mtavruli bd";
+}
+.main_title::before,
+.news_sm_title::before,
+.info_title::before {
+  position: absolute;
+  content: "";
+  box-shadow: 10px 0px 0 0 var(--light-color), 20px 0px 0 0 var(--light-color),
+    30px 0px 0 0 var(--light-color), 50px 0px 0 0 var(--light-color);
+  background-color: var(--light-color);
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 2px;
+}
+.all_news {
+  font-family: "BPG Nino Mtavruli bd";
+  color: var(--light-color);
+  font-size: var(--bg-color);
+}
+.news_block::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 38%),
+    rgba(0, 0, 0, 43%),
+    rgba(0, 0, 0, 48%),
+    rgba(0, 0, 0, 50%),
+    rgba(0, 0, 0, 61%),
+    rgba(0, 0, 0, 69%),
+    rgba(0, 0, 0, 77%),
+    rgba(0, 0, 0, 86%),
+    rgba(0, 0, 0, 94%)
+  );
+}
+.news_item {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  left: 30px;
+  z-index: 999;
+  color: #fff;
+}
+.blue_item {
+  background-color: var(--light-color);
+  border-radius: 21px;
+  font-family: "BPG Nino Mtavruli bd";
+  padding: 12px 30px;
+  margin-bottom: 120px;
+}
+.date_,
+.news_sm_title,
+.see_more {
+  font-family: "BPG Nino Mtavruli bd";
+}
+.news_sm_title {
+  font-size: 24px;
+}
+
+.sm_description {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.see_more {
+  color: var(--light-color);
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.news_img {
+  width: 100%;
+  height: 414px;
+}
+.news_info {
+  max-height: 180px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.news_block:hover::before {
+  background: rgba(255, 255, 255, 90%);
+  box-shadow: none;
+}
+.news_block:hover .news_info {
+  transform: translateY(-50px);
+}
+.news_block:hover .date_,
+.news_block:hover .sm_description {
+  color: var(--dark-grey);
+}
+.news_block:hover .news_sm_title {
+  color: #000;
+}
+.news_block:hover .news_info {
+  overflow: initial;
+}
+.sm_img {
+  width: 100%;
+  height: 150px;
+}
+.news_box {
+  margin-bottom: 60px;
+}
+.more_ {
+  background-color: #bcbcbc;
+  transition: var(--transition);
+  color: #fff;
+  width: 190px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.more_:hover {
+  background-color: var(--light-color);
+}
+.top_block {
+  box-shadow: 6px 7px 20px rgba(0, 0, 0, 16%);
+}
+.top_block,
+.bottom_block {
+  padding: 49px 60px;
+}
+
+.top_info span {
+  font-size: 68px;
+  font-family: "FiraGO bold";
+  color: var(--light-color);
+  padding-right: 30px;
+}
+.top_info p {
+  font-size: 20px;
+  font-family: "BPG Nino Mtavruli bd";
+}
+.bottom_block {
+  position: relative;
+  z-index: 999;
+  background-color: var(--light-color);
+}
+.element_message {
+  font-family: "BPG Nino Mtavruli bd";
+  font-size: 24px;
+  color: var(--white-color);
+}
+.msg_form input {
+  width: 438px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  height: 50px;
+  font-size: 12px;
+}
+.msg_form input::placeholder {
+  color: #fff;
+}
+.subscribe_btn {
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  font-family: "BPG Nino Mtavruli bd";
+  width: 250px;
+  height: 50px;
+  margin-left: 65px;
+  transition: var(--transition);
+}
+.subscribe_btn:hover {
+  background-color: #000;
+  color: var(--white-color);
+}
+.footer_ {
+  margin-top: -70px;
+}
+.footer_item {
+  padding: 150px 0 100px;
+  color: #fff;
+  background-image: url("../img/transparent\ \(002\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid #9a9a9a;
+}
+.footer_item,
+.footer_bottom {
+  background-color: #1a1a1a;
+}
+.footer_title {
+  margin-bottom: 30px;
+  font-family: "BPG Nino Mtavruli bd";
+}
+.footer_ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_ul li {
+  padding-left: 1.3em;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.footer_ul li:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+  color: var(--light-color);
+}
+.footer_bottom {
+  padding: 20px 0;
+}
+.footer_bottom .logo_block {
+  margin-right: 0;
+}
+.sm_txt {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  color: var(--white-color);
+}
+
+.sm_txt span,
+.mail_li,
+.mail_ {
+  color: var(--light-color);
+}
+.news_block .news_sm_title::before {
+  content: none;
+}
+
+.slide_section {
+  margin-right: -100px;
+  margin-left: -20px;
+}
+.pagination a {
+  color: #848484 !important;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  color: #000 !important;
+}
+.pagination i {
+  color: var(--light-color) !important;
+}
+.news_element_img .blue_item {
+  top: 30px;
+  left: 30px;
+  color: var(--white-color);
+}
+.news_element_img {
+  height: 478px;
+}
+.news_title {
+  font-size: 20px;
+  font-family: "BPG Nino Mtavruli bd";
+}
+.element_news_block {
+  padding: 30px;
+  background-color: #f9f9f9;
+  margin-bottom: 45px;
+}
+.news_date {
+  font-size: 12px;
+  color: var(--dark-grey);
+  margin-bottom: 30px;
+}
+.element_item {
+  line-height: 2;
+}
+.element_item,
+.share_ {
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+}
+.back_,
+.share_ {
+  color: #a4a4a4;
+  font-size: 14px;
+}
+.back_ i {
+  transition: var(--transition);
+  padding-right: 15px;
+  color: var(--light-color);
+}
+.back_:hover i {
+  transform: translateX(-5px);
+}
+.form-select:focus {
+  box-shadow: none;
+  outline: none;
+}
+.info_p,
+.input_form .form-select,
+.input_form input,
+.file-upload,
+.txt_area textarea {
+  font-family: "BPG Mrgvlovani";
+  font-size: 14px;
+}
+.input_form .form-select,
+.input_form input,
+.txt_area textarea {
+  border: 1px solid #dfdfdf;
+  color: #9f9f9f;
+  padding: 14px;
+  border-radius: 5px;
+  width: 100%;
+}
+.input_form input::placeholder,
+.txt_area textarea::placeholder {
+  color: #9f9f9f;
+}
+.txt_area textarea {
+  resize: none;
+  height: 273px;
+}
+.input_form i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 5px;
+}
+.file-upload p {
+  padding: 0 25px;
+  color: #9f9f9f;
+}
+.file-upload label {
+  background-color: var(--light-color);
+  width: 129px;
+  border-radius: 5px;
+  padding: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+.file-upload > input {
+  display: none;
+}
+.btn_ {
+  border-radius: 25px;
+  color: #fff;
+  background-color: var(--light-color);
+  width: 250px;
+  height: 50px;
+  transition: var(--transition);
+}
+.btn_:hover {
+  background-color: #518ce5;
+}
+.img {
+  height: 410px;
+}
+.info_title {
+  position: relative;
+}
+.contact_list {
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+.txt_info {
+  margin-left: 20px;
+}
+.txt_info,
+.meeting_info,
+.info_title,
+.contact_list,
+.txt_ {
+  font-family: "BPG Mrgvlovani";
+}
+.img_banner {
+  height: 363px;
+}
+.announcement_img {
+  height: 350px;
+}
+.announcement_img img {
+  border-radius: 15px 0 0 15px;
+}
+.announcement_block {
+  border-radius: 0px 15px 15px 0;
+  border: 1px solid #e3e3e3;
+  border-left: 0;
+  padding: 45px;
+}
+.txt_ {
+  color: #6e6e6e;
+}
+.service_box {
+  border: 1px solid #c2c2c2;
+  border-radius: 50px;
+  height: 83px;
+  font-family: "BPG Nino Mtavruli bd";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.service_box:hover {
+  background-color: var(--light-color);
+  color: var(--white-color);
+}
+.li_element {
+  background-color: #f9f9f9;
+  font-family: "BPG Mrgvlovani";
+  justify-content: space-between;
+  padding: 24px;
+}
+.doc {
+  padding-left: 24px;
+  border-left: 1px solid #e1e1e1;
+}
+.elm_li li.active,
+.elm_li li:hover {
+  color: var(--light-color);
+  transition: var(--transition);
+}
+.elm_li li {
+  margin-bottom: 35px;
+}
+.elm_li li:last-child {
+  margin-bottom: 0;
+}
+.elemenet_title {
+  font-size: 18px;
+}
+.description_block {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
+}
+.description_info {
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+}
+
+.blue_txt {
+  max-width: 170px;
+  width: 100%;
+  color: var(--light-color);
+  margin-right: 15px;
+  font-family: "BPG Mrgvlovani Caps 2010";
+}
+.team_img {
+  height: 370px;
+}
+.team_img img {
+  object-fit: cover;
+  object-position: center;
+}
+.element_position {
+  font-size: 14px;
+}
+.service_title {
+  background-color: var(--light-color);
+  color: var(--white-color);
+  padding: 30px;
+  margin-bottom: 25px;
+}
+.service_li,
+.mail_ {
+  font-size: 14px;
+}
+.mail_ {
+  word-break: break-all;
+}
+.service_li {
+  padding-left: 20px;
+  font-family: "BPG Mrgvlovani";
+}
+.service_li li::before {
+  content: "\2022";
+  color: var(--light-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding-right: 30px;
+}
